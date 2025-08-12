@@ -1,1 +1,2 @@
 # vt-project
+This project is the result of my one-month vocational training in HTML, CSS, and JavaScript, where I learned to design and develop responsive, user-friendly web pages. It demonstrates my understanding of web structure using HTML, styling and layout through CSS, and interactivity with JavaScript. The project showcases essential web development skills, including forms, media integration, animations, event handling, and responsive design, reflecting my ability to create visually appealing and functional websites.
