@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://www.joharcg.com/wp-content/uploads/2019/09/CG-Sal-Tree1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Places Section */
+.places {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.places h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 300px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem 0 0.5rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Things to Do Section */
+.todo {
+  background-color: #f0f0f0;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.todo h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.todo table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.todo th,
+.todo td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.todo th {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Dark mode for table */
+body.dark-mode .todo table {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .todo th {
+  background-color: #000;
+}
+
+body.dark-mode .todo td {
+  border-color: #555;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background-color:gray;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.contact button {
+  padding: 0.75rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111;
+  color: #eee;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #111;
+  color: #eee;
+}
+
+body.dark-mode .about,
+body.dark-mode .todo,
+body.dark-mode .contact {
+  background-color: #222;
+}
+
+body.dark-mode .places {
+  background-color: #111;
+}
+
+body.dark-mode .card {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .card p {
+  color: #ccc;
+}
+
+body.dark-mode footer {
+  background-color: #000;
+}
+
+body.dark-mode .contact input,
+body.dark-mode .contact textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
